@@ -1,1 +1,2 @@
-# EmbeddedSystems
+# EmbeddedSystems  
+Repository for FPGA/Microcontrollers projects
