@@ -1,0 +1,1880 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"20 Trabalho1GabrielVasconcelos.c
+[; ;Trabalho1GabrielVasconcelos.c: 20: void setup_hard(void);
+[v _setup_hard `(v ~T0 @X0 0 ef ]
+"21
+[; ;Trabalho1GabrielVasconcelos.c: 21: void loop(void);
+[v _loop `(v ~T0 @X0 0 ef ]
+"4690 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4690: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
+"1477
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1477: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"1699
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1699: extern volatile unsigned char TRISB __attribute__((address(0xF93)));
+[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
+"2143
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2143: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"22 Trabalho1GabrielVasconcelos.c
+[; ;Trabalho1GabrielVasconcelos.c: 22: void setup(void);
+[v _setup `(v ~T0 @X0 0 ef ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
+"7610 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 7610: extern volatile __bit LATA2 __attribute__((address(0x7C4A)));
+[v _LATA2 `Vb ~T0 @X0 0 e@31818 ]
+"7613
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 7613: extern volatile __bit LATA3 __attribute__((address(0x7C4B)));
+[v _LATA3 `Vb ~T0 @X0 0 e@31819 ]
+"75 Trabalho1GabrielVasconcelos.c
+[; ;Trabalho1GabrielVasconcelos.c: 75: void entrada(void);
+[v _entrada `(v ~T0 @X0 0 ef ]
+"76
+[; ;Trabalho1GabrielVasconcelos.c: 76: void processamento(void);
+[v _processamento `(v ~T0 @X0 0 ef ]
+"77
+[; ;Trabalho1GabrielVasconcelos.c: 77: void saida(void);
+[v _saida `(v ~T0 @X0 0 ef ]
+"271 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 271: extern volatile unsigned char PORTB __attribute__((address(0xF81)));
+[v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
+"1313
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1313: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
+[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+"6 ./configbits.h
+[p x OSC  =  HS          ]
+"7
+[p x FCMEN  =  OFF       ]
+"8
+[p x IESO  =  OFF        ]
+"11
+[p x PWRT  =  OFF        ]
+"12
+[p x BOREN  =  SBORDIS   ]
+"13
+[p x BORV  =  3          ]
+"16
+[p x WDT  =  OFF         ]
+"17
+[p x WDTPS  =  32768     ]
+"20
+[p x CCP2MX  =  PORTC    ]
+"21
+[p x PBADEN  =  ON       ]
+"22
+[p x LPT1OSC  =  OFF     ]
+"23
+[p x MCLRE  =  ON        ]
+"26
+[p x STVREN  =  ON       ]
+"27
+[p x LVP  =  OFF         ]
+"28
+[p x XINST  =  OFF       ]
+"31
+[p x CP0  =  OFF         ]
+"32
+[p x CP1  =  OFF         ]
+"33
+[p x CP2  =  OFF         ]
+"34
+[p x CP3  =  OFF         ]
+"37
+[p x CPB  =  OFF         ]
+"38
+[p x CPD  =  OFF         ]
+"41
+[p x WRT0  =  OFF        ]
+"42
+[p x WRT1  =  OFF        ]
+"43
+[p x WRT2  =  OFF        ]
+"44
+[p x WRT3  =  OFF        ]
+"47
+[p x WRTC  =  OFF        ]
+"48
+[p x WRTB  =  OFF        ]
+"49
+[p x WRTD  =  OFF        ]
+"52
+[p x EBTR0  =  OFF       ]
+"53
+[p x EBTR1  =  OFF       ]
+"54
+[p x EBTR2  =  OFF       ]
+"55
+[p x EBTR3  =  OFF       ]
+"58
+[p x EBTRB  =  OFF       ]
+"54 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 54: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"273
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 273: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"452
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 452: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"634
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 634: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"776
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 776: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"979
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 979: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"1091
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1091: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"1203
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1203: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1315
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1315: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"1427
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1427: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"1479
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1479: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1484
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1484: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1701
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1701: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1706
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1706: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1923
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1923: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1928
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 1928: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"2145
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2145: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"2150
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2150: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"2367
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2367: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"2372
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2372: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"2531
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2531: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"2596
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2596: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"2673
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2673: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"2750
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2750: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"2827
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2827: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2893
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2893: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2959
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 2959: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"3025
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3025: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"3091
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3091: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"3098
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3098: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"3105
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3105: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"3112
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3112: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"3117
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3117: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"3322
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3322: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"3327
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3327: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"3578
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3578: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"3583
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3583: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"3590
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3590: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"3595
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3595: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"3602
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3602: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"3607
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3607: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"3614
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3614: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"3621
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3621: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"3733
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3733: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"3740
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3740: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"3747
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3747: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"3754
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3754: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"3844
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3844: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3923
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3923: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3928
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 3928: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"4085
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4085: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"4090
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4090: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"4223
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4223: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"4228
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4228: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"4403
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4403: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"4482
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4482: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"4489
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4489: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"4496
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4496: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"4503
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4503: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"4600
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4600: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"4607
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4607: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"4614
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4614: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"4621
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4621: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"4692
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4692: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"4777
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4777: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"4896
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4896: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"4903
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4903: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"4910
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4910: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"4917
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 4917: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"5012
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5012: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"5082
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5082: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"5303
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5303: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"5310
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5310: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"5317
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5317: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"5415
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5415: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"5420
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5420: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"5525
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5525: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"5532
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5532: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"5635
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5635: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"5642
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5642: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"5649
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5649: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"5656
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5656: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"5789
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5789: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"5817
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5817: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"5822
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 5822: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"6087
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6087: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"6170
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6170: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"6253
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6253: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"6260
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6260: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"6267
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6267: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"6274
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6274: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"6345
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6345: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"6352
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6352: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"6359
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6359: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"6366
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6366: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"6373
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6373: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"6380
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6380: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"6387
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6387: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"6394
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6394: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"6401
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6401: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"6408
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6408: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"6415
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6415: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"6422
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6422: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"6429
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6429: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"6436
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6436: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"6443
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6443: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"6450
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6450: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"6457
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6457: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"6464
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6464: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"6476
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6476: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"6483
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6483: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"6490
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6490: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"6497
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6497: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"6504
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6504: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"6511
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6511: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"6518
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6518: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"6525
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6525: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"6532
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6532: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"6624
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6624: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"6694
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6694: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"6811
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6811: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"6818
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6818: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"6825
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6825: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"6832
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6832: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"6841
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6841: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"6848
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6848: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"6855
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6855: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"6862
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6862: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"6871
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6871: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"6878
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6878: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"6885
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6885: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"6892
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6892: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"6899
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6899: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"6906
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6906: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"6980
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6980: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"6987
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6987: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6994
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 6994: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"7001
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8\pic\include\proc\pic18f4520.h: 7001: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"25 Trabalho1GabrielVasconcelos.c
+[; ;Trabalho1GabrielVasconcelos.c: 25: unsigned char conv7seg[17] = {
+[v _conv7seg `uc ~T0 @X0 -> 17 `i e ]
+[i _conv7seg
+:U ..
+-> -> 63 `i `uc
+-> -> 6 `i `uc
+-> -> 91 `i `uc
+-> -> 79 `i `uc
+-> -> 102 `i `uc
+-> -> 109 `i `uc
+-> -> 125 `i `uc
+-> -> 7 `i `uc
+-> -> 127 `i `uc
+-> -> 111 `i `uc
+-> -> 119 `i `uc
+-> -> 124 `i `uc
+-> -> 57 `i `uc
+-> -> 94 `i `uc
+-> -> 121 `i `uc
+-> -> 113 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"46
+[; ;Trabalho1GabrielVasconcelos.c: 46: int main(void) {
+[v _main `(i ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"48
+[; ;Trabalho1GabrielVasconcelos.c: 48:     setup_hard();
+[e ( _setup_hard ..  ]
+"49
+[; ;Trabalho1GabrielVasconcelos.c: 49:     while(1) loop();
+[e :U 283 ]
+[e ( _loop ..  ]
+[e :U 282 ]
+[e $U 283  ]
+[e :U 284 ]
+"50
+[; ;Trabalho1GabrielVasconcelos.c: 50: }
+[e :UE 281 ]
+}
+"53
+[; ;Trabalho1GabrielVasconcelos.c: 53: void setup_hard(void) {
+[v _setup_hard `(v ~T0 @X0 1 ef ]
+{
+[e :U _setup_hard ]
+[f ]
+"55
+[; ;Trabalho1GabrielVasconcelos.c: 55:     ADCON1 = 0b00001111;
+[e = _ADCON1 -> -> 15 `i `uc ]
+"56
+[; ;Trabalho1GabrielVasconcelos.c: 56:     TRISA = 0b11000011;
+[e = _TRISA -> -> 195 `i `uc ]
+"57
+[; ;Trabalho1GabrielVasconcelos.c: 57:     TRISB = 0b11111111;
+[e = _TRISB -> -> 255 `i `uc ]
+"58
+[; ;Trabalho1GabrielVasconcelos.c: 58:     TRISD = 0b00000000;
+[e = _TRISD -> -> 0 `i `uc ]
+"59
+[; ;Trabalho1GabrielVasconcelos.c: 59:     setup();
+[e ( _setup ..  ]
+"61
+[; ;Trabalho1GabrielVasconcelos.c: 61: }
+[e :UE 285 ]
+}
+"63
+[; ;Trabalho1GabrielVasconcelos.c: 63: void atraso( unsigned int tempo){
+[v _atraso `(v ~T0 @X0 1 ef1`ui ]
+{
+[e :U _atraso ]
+[v _tempo `ui ~T0 @X0 1 r1 ]
+[f ]
+"65
+[; ;Trabalho1GabrielVasconcelos.c: 65:     unsigned int contador=1;
+[v _contador `ui ~T0 @X0 1 a ]
+[e = _contador -> -> 1 `i `ui ]
+"67
+[; ;Trabalho1GabrielVasconcelos.c: 67:     while (contador < tempo) {
+[e $U 287  ]
+[e :U 288 ]
+{
+"68
+[; ;Trabalho1GabrielVasconcelos.c: 68:         _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"69
+[; ;Trabalho1GabrielVasconcelos.c: 69:         contador++;
+[e ++ _contador -> -> 1 `i `ui ]
+"70
+[; ;Trabalho1GabrielVasconcelos.c: 70:     }
+}
+[e :U 287 ]
+"67
+[; ;Trabalho1GabrielVasconcelos.c: 67:     while (contador < tempo) {
+[e $ < _contador _tempo 288  ]
+[e :U 289 ]
+"71
+[; ;Trabalho1GabrielVasconcelos.c: 71: }
+[e :UE 286 ]
+}
+"79
+[; ;Trabalho1GabrielVasconcelos.c: 79: unsigned char cont1,cont2, borda_d;
+[v _cont1 `uc ~T0 @X0 1 e ]
+[v _cont2 `uc ~T0 @X0 1 e ]
+[v _borda_d `uc ~T0 @X0 1 e ]
+"80
+[; ;Trabalho1GabrielVasconcelos.c: 80: unsigned int numero = 0;
+[v _numero `ui ~T0 @X0 1 e ]
+[i _numero
+-> -> 0 `i `ui
+]
+"83
+[; ;Trabalho1GabrielVasconcelos.c: 83: void setup(void) {
+[v _setup `(v ~T0 @X0 1 ef ]
+{
+[e :U _setup ]
+[f ]
+"85
+[; ;Trabalho1GabrielVasconcelos.c: 85:     LATA2=LATA3=0;
+[e = _LATA2 -> = _LATA3 -> -> 0 `i `b `b ]
+"87
+[; ;Trabalho1GabrielVasconcelos.c: 87: }
+[e :UE 290 ]
+}
+"89
+[; ;Trabalho1GabrielVasconcelos.c: 89: void loop(void) {
+[v _loop `(v ~T0 @X0 1 ef ]
+{
+[e :U _loop ]
+[f ]
+"90
+[; ;Trabalho1GabrielVasconcelos.c: 90:     entrada();
+[e ( _entrada ..  ]
+"91
+[; ;Trabalho1GabrielVasconcelos.c: 91:     processamento();
+[e ( _processamento ..  ]
+"92
+[; ;Trabalho1GabrielVasconcelos.c: 92:     saida();
+[e ( _saida ..  ]
+"93
+[; ;Trabalho1GabrielVasconcelos.c: 93:     atraso(10);
+[e ( _atraso (1 -> -> 10 `i `ui ]
+"95
+[; ;Trabalho1GabrielVasconcelos.c: 95: }
+[e :UE 291 ]
+}
+"97
+[; ;Trabalho1GabrielVasconcelos.c: 97: void entrada(void) {
+[v _entrada `(v ~T0 @X0 1 ef ]
+{
+[e :U _entrada ]
+[f ]
+"98
+[; ;Trabalho1GabrielVasconcelos.c: 98:     static unsigned char ent_ant=0b11111111;
+[v F2588 `uc ~T0 @X0 1 s ent_ant ]
+[i F2588
+-> -> 255 `i `uc
+]
+"99
+[; ;Trabalho1GabrielVasconcelos.c: 99:     unsigned char ent_atual, ent_int;
+[v _ent_atual `uc ~T0 @X0 1 a ]
+[v _ent_int `uc ~T0 @X0 1 a ]
+"101
+[; ;Trabalho1GabrielVasconcelos.c: 101:     ent_atual = PORTB;
+[e = _ent_atual _PORTB ]
+"103
+[; ;Trabalho1GabrielVasconcelos.c: 103:     ent_int = ent_atual ^ ent_ant;
+[e = _ent_int -> ^ -> _ent_atual `i -> F2588 `i `uc ]
+"104
+[; ;Trabalho1GabrielVasconcelos.c: 104:     borda_d = ent_int & ent_ant;
+[e = _borda_d -> & -> _ent_int `i -> F2588 `i `uc ]
+"106
+[; ;Trabalho1GabrielVasconcelos.c: 106:     ent_ant = ent_atual;
+[e = F2588 _ent_atual ]
+"108
+[; ;Trabalho1GabrielVasconcelos.c: 108: }
+[e :UE 292 ]
+}
+"110
+[; ;Trabalho1GabrielVasconcelos.c: 110: void processamento(void) {
+[v _processamento `(v ~T0 @X0 1 ef ]
+{
+[e :U _processamento ]
+[f ]
+"119
+[; ;Trabalho1GabrielVasconcelos.c: 119:     if (borda_d & 0b00001000){
+[e $ ! != & -> _borda_d `i -> 8 `i -> 0 `i 294  ]
+{
+"120
+[; ;Trabalho1GabrielVasconcelos.c: 120:         if(PORTB & 0b00010000){
+[e $ ! != & -> _PORTB `i -> 16 `i -> 0 `i 295  ]
+{
+"121
+[; ;Trabalho1GabrielVasconcelos.c: 121:             if(PORTB & 0b00100000){
+[e $ ! != & -> _PORTB `i -> 32 `i -> 0 `i 296  ]
+{
+"122
+[; ;Trabalho1GabrielVasconcelos.c: 122:                switch(numero){
+[e $U 298  ]
+{
+"123
+[; ;Trabalho1GabrielVasconcelos.c: 123:                     case 0:
+[e :U 299 ]
+"124
+[; ;Trabalho1GabrielVasconcelos.c: 124:                         numero = 15;
+[e = _numero -> -> 15 `i `ui ]
+"125
+[; ;Trabalho1GabrielVasconcelos.c: 125:                         cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"126
+[; ;Trabalho1GabrielVasconcelos.c: 126:                         cont2 = 5;
+[e = _cont2 -> -> 5 `i `uc ]
+"127
+[; ;Trabalho1GabrielVasconcelos.c: 127:                         break;
+[e $U 297  ]
+"128
+[; ;Trabalho1GabrielVasconcelos.c: 128:                     case 1:
+[e :U 300 ]
+"129
+[; ;Trabalho1GabrielVasconcelos.c: 129:                         numero = 0;
+[e = _numero -> -> 0 `i `ui ]
+"130
+[; ;Trabalho1GabrielVasconcelos.c: 130:                         cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"131
+[; ;Trabalho1GabrielVasconcelos.c: 131:                         cont2 = 0;
+[e = _cont2 -> -> 0 `i `uc ]
+"132
+[; ;Trabalho1GabrielVasconcelos.c: 132:                         break;
+[e $U 297  ]
+"133
+[; ;Trabalho1GabrielVasconcelos.c: 133:                     case 2:
+[e :U 301 ]
+"134
+[; ;Trabalho1GabrielVasconcelos.c: 134:                         numero = 0;
+[e = _numero -> -> 0 `i `ui ]
+"135
+[; ;Trabalho1GabrielVasconcelos.c: 135:                         cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"136
+[; ;Trabalho1GabrielVasconcelos.c: 136:                         cont2 = 0;
+[e = _cont2 -> -> 0 `i `uc ]
+"137
+[; ;Trabalho1GabrielVasconcelos.c: 137:                         break;
+[e $U 297  ]
+"138
+[; ;Trabalho1GabrielVasconcelos.c: 138:                     case 3:
+[e :U 302 ]
+"139
+[; ;Trabalho1GabrielVasconcelos.c: 139:                        numero = 0;
+[e = _numero -> -> 0 `i `ui ]
+"140
+[; ;Trabalho1GabrielVasconcelos.c: 140:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"141
+[; ;Trabalho1GabrielVasconcelos.c: 141:                        cont2 = 0;
+[e = _cont2 -> -> 0 `i `uc ]
+"142
+[; ;Trabalho1GabrielVasconcelos.c: 142:                        break;
+[e $U 297  ]
+"143
+[; ;Trabalho1GabrielVasconcelos.c: 143:                     case 4:
+[e :U 303 ]
+"144
+[; ;Trabalho1GabrielVasconcelos.c: 144:                       numero = 3;
+[e = _numero -> -> 3 `i `ui ]
+"145
+[; ;Trabalho1GabrielVasconcelos.c: 145:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"146
+[; ;Trabalho1GabrielVasconcelos.c: 146:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"147
+[; ;Trabalho1GabrielVasconcelos.c: 147:                       break;
+[e $U 297  ]
+"148
+[; ;Trabalho1GabrielVasconcelos.c: 148:                     case 5:
+[e :U 304 ]
+"149
+[; ;Trabalho1GabrielVasconcelos.c: 149:                       numero = 3;
+[e = _numero -> -> 3 `i `ui ]
+"150
+[; ;Trabalho1GabrielVasconcelos.c: 150:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"151
+[; ;Trabalho1GabrielVasconcelos.c: 151:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"152
+[; ;Trabalho1GabrielVasconcelos.c: 152:                       break;
+[e $U 297  ]
+"153
+[; ;Trabalho1GabrielVasconcelos.c: 153:                     case 6:
+[e :U 305 ]
+"154
+[; ;Trabalho1GabrielVasconcelos.c: 154:                       numero = 3;
+[e = _numero -> -> 3 `i `ui ]
+"155
+[; ;Trabalho1GabrielVasconcelos.c: 155:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"156
+[; ;Trabalho1GabrielVasconcelos.c: 156:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"157
+[; ;Trabalho1GabrielVasconcelos.c: 157:                       break;
+[e $U 297  ]
+"158
+[; ;Trabalho1GabrielVasconcelos.c: 158:                     case 7:
+[e :U 306 ]
+"159
+[; ;Trabalho1GabrielVasconcelos.c: 159:                       numero = 6;
+[e = _numero -> -> 6 `i `ui ]
+"160
+[; ;Trabalho1GabrielVasconcelos.c: 160:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"161
+[; ;Trabalho1GabrielVasconcelos.c: 161:                       cont2 = 6;
+[e = _cont2 -> -> 6 `i `uc ]
+"162
+[; ;Trabalho1GabrielVasconcelos.c: 162:                       break;
+[e $U 297  ]
+"163
+[; ;Trabalho1GabrielVasconcelos.c: 163:                     case 8:
+[e :U 307 ]
+"164
+[; ;Trabalho1GabrielVasconcelos.c: 164:                       numero = 6;
+[e = _numero -> -> 6 `i `ui ]
+"165
+[; ;Trabalho1GabrielVasconcelos.c: 165:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"166
+[; ;Trabalho1GabrielVasconcelos.c: 166:                       cont2 = 6;
+[e = _cont2 -> -> 6 `i `uc ]
+"167
+[; ;Trabalho1GabrielVasconcelos.c: 167:                       break;
+[e $U 297  ]
+"168
+[; ;Trabalho1GabrielVasconcelos.c: 168:                     case 9:
+[e :U 308 ]
+"169
+[; ;Trabalho1GabrielVasconcelos.c: 169:                       numero = 6;
+[e = _numero -> -> 6 `i `ui ]
+"170
+[; ;Trabalho1GabrielVasconcelos.c: 170:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"171
+[; ;Trabalho1GabrielVasconcelos.c: 171:                       cont2 = 6;
+[e = _cont2 -> -> 6 `i `uc ]
+"172
+[; ;Trabalho1GabrielVasconcelos.c: 172:                       break;
+[e $U 297  ]
+"173
+[; ;Trabalho1GabrielVasconcelos.c: 173:                     case 10:
+[e :U 309 ]
+"174
+[; ;Trabalho1GabrielVasconcelos.c: 174:                       numero = 9;
+[e = _numero -> -> 9 `i `ui ]
+"175
+[; ;Trabalho1GabrielVasconcelos.c: 175:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"176
+[; ;Trabalho1GabrielVasconcelos.c: 176:                       cont2 = 9;
+[e = _cont2 -> -> 9 `i `uc ]
+"177
+[; ;Trabalho1GabrielVasconcelos.c: 177:                       break;
+[e $U 297  ]
+"178
+[; ;Trabalho1GabrielVasconcelos.c: 178:                     case 11:
+[e :U 310 ]
+"179
+[; ;Trabalho1GabrielVasconcelos.c: 179:                       numero = 9;
+[e = _numero -> -> 9 `i `ui ]
+"180
+[; ;Trabalho1GabrielVasconcelos.c: 180:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"181
+[; ;Trabalho1GabrielVasconcelos.c: 181:                       cont2 = 9;
+[e = _cont2 -> -> 9 `i `uc ]
+"182
+[; ;Trabalho1GabrielVasconcelos.c: 182:                       break;
+[e $U 297  ]
+"183
+[; ;Trabalho1GabrielVasconcelos.c: 183:                     case 12:
+[e :U 311 ]
+"184
+[; ;Trabalho1GabrielVasconcelos.c: 184:                       numero = 9;
+[e = _numero -> -> 9 `i `ui ]
+"185
+[; ;Trabalho1GabrielVasconcelos.c: 185:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"186
+[; ;Trabalho1GabrielVasconcelos.c: 186:                       cont2 = 9;
+[e = _cont2 -> -> 9 `i `uc ]
+"187
+[; ;Trabalho1GabrielVasconcelos.c: 187:                       break;
+[e $U 297  ]
+"188
+[; ;Trabalho1GabrielVasconcelos.c: 188:                     case 13:
+[e :U 312 ]
+"189
+[; ;Trabalho1GabrielVasconcelos.c: 189:                       numero = 12;
+[e = _numero -> -> 12 `i `ui ]
+"190
+[; ;Trabalho1GabrielVasconcelos.c: 190:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"191
+[; ;Trabalho1GabrielVasconcelos.c: 191:                       cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"192
+[; ;Trabalho1GabrielVasconcelos.c: 192:                       break;
+[e $U 297  ]
+"193
+[; ;Trabalho1GabrielVasconcelos.c: 193:                     case 14:
+[e :U 313 ]
+"194
+[; ;Trabalho1GabrielVasconcelos.c: 194:                       numero = 12;
+[e = _numero -> -> 12 `i `ui ]
+"195
+[; ;Trabalho1GabrielVasconcelos.c: 195:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"196
+[; ;Trabalho1GabrielVasconcelos.c: 196:                       cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"197
+[; ;Trabalho1GabrielVasconcelos.c: 197:                       break;
+[e $U 297  ]
+"198
+[; ;Trabalho1GabrielVasconcelos.c: 198:                     case 15:
+[e :U 314 ]
+"199
+[; ;Trabalho1GabrielVasconcelos.c: 199:                       numero = 12;
+[e = _numero -> -> 12 `i `ui ]
+"200
+[; ;Trabalho1GabrielVasconcelos.c: 200:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"201
+[; ;Trabalho1GabrielVasconcelos.c: 201:                       cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"202
+[; ;Trabalho1GabrielVasconcelos.c: 202:                       break;
+[e $U 297  ]
+"203
+[; ;Trabalho1GabrielVasconcelos.c: 203:                 }
+}
+[e $U 297  ]
+[e :U 298 ]
+[e [\ _numero , $ -> -> 0 `i `ui 299
+ , $ -> -> 1 `i `ui 300
+ , $ -> -> 2 `i `ui 301
+ , $ -> -> 3 `i `ui 302
+ , $ -> -> 4 `i `ui 303
+ , $ -> -> 5 `i `ui 304
+ , $ -> -> 6 `i `ui 305
+ , $ -> -> 7 `i `ui 306
+ , $ -> -> 8 `i `ui 307
+ , $ -> -> 9 `i `ui 308
+ , $ -> -> 10 `i `ui 309
+ , $ -> -> 11 `i `ui 310
+ , $ -> -> 12 `i `ui 311
+ , $ -> -> 13 `i `ui 312
+ , $ -> -> 14 `i `ui 313
+ , $ -> -> 15 `i `ui 314
+ 297 ]
+[e :U 297 ]
+"204
+[; ;Trabalho1GabrielVasconcelos.c: 204:             }
+}
+[e $U 315  ]
+"206
+[; ;Trabalho1GabrielVasconcelos.c: 206:             else{
+[e :U 296 ]
+{
+"207
+[; ;Trabalho1GabrielVasconcelos.c: 207:                 switch(numero){
+[e $U 317  ]
+{
+"208
+[; ;Trabalho1GabrielVasconcelos.c: 208:                     case 0:
+[e :U 318 ]
+"209
+[; ;Trabalho1GabrielVasconcelos.c: 209:                       numero = 13;
+[e = _numero -> -> 13 `i `ui ]
+"210
+[; ;Trabalho1GabrielVasconcelos.c: 210:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"211
+[; ;Trabalho1GabrielVasconcelos.c: 211:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"212
+[; ;Trabalho1GabrielVasconcelos.c: 212:                       break;
+[e $U 316  ]
+"213
+[; ;Trabalho1GabrielVasconcelos.c: 213:                     case 1:
+[e :U 319 ]
+"214
+[; ;Trabalho1GabrielVasconcelos.c: 214:                       numero = 13;
+[e = _numero -> -> 13 `i `ui ]
+"215
+[; ;Trabalho1GabrielVasconcelos.c: 215:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"216
+[; ;Trabalho1GabrielVasconcelos.c: 216:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"217
+[; ;Trabalho1GabrielVasconcelos.c: 217:                       break;
+[e $U 316  ]
+"218
+[; ;Trabalho1GabrielVasconcelos.c: 218:                     case 2:
+[e :U 320 ]
+"219
+[; ;Trabalho1GabrielVasconcelos.c: 219:                       numero = 13;
+[e = _numero -> -> 13 `i `ui ]
+"220
+[; ;Trabalho1GabrielVasconcelos.c: 220:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"221
+[; ;Trabalho1GabrielVasconcelos.c: 221:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"222
+[; ;Trabalho1GabrielVasconcelos.c: 222:                       break;
+[e $U 316  ]
+"223
+[; ;Trabalho1GabrielVasconcelos.c: 223:                     case 3:
+[e :U 321 ]
+"224
+[; ;Trabalho1GabrielVasconcelos.c: 224:                       numero = 2;
+[e = _numero -> -> 2 `i `ui ]
+"225
+[; ;Trabalho1GabrielVasconcelos.c: 225:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"226
+[; ;Trabalho1GabrielVasconcelos.c: 226:                       cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"227
+[; ;Trabalho1GabrielVasconcelos.c: 227:                       break;
+[e $U 316  ]
+"228
+[; ;Trabalho1GabrielVasconcelos.c: 228:                     case 4:
+[e :U 322 ]
+"229
+[; ;Trabalho1GabrielVasconcelos.c: 229:                       numero = 3;
+[e = _numero -> -> 3 `i `ui ]
+"230
+[; ;Trabalho1GabrielVasconcelos.c: 230:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"231
+[; ;Trabalho1GabrielVasconcelos.c: 231:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"232
+[; ;Trabalho1GabrielVasconcelos.c: 232:                       break;
+[e $U 316  ]
+"233
+[; ;Trabalho1GabrielVasconcelos.c: 233:                     case 5:
+[e :U 323 ]
+"234
+[; ;Trabalho1GabrielVasconcelos.c: 234:                       numero = 3;
+[e = _numero -> -> 3 `i `ui ]
+"235
+[; ;Trabalho1GabrielVasconcelos.c: 235:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"236
+[; ;Trabalho1GabrielVasconcelos.c: 236:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"237
+[; ;Trabalho1GabrielVasconcelos.c: 237:                       break;
+[e $U 316  ]
+"238
+[; ;Trabalho1GabrielVasconcelos.c: 238:                     case 6:
+[e :U 324 ]
+"239
+[; ;Trabalho1GabrielVasconcelos.c: 239:                       numero = 5;
+[e = _numero -> -> 5 `i `ui ]
+"240
+[; ;Trabalho1GabrielVasconcelos.c: 240:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"241
+[; ;Trabalho1GabrielVasconcelos.c: 241:                       cont2 = 5;
+[e = _cont2 -> -> 5 `i `uc ]
+"242
+[; ;Trabalho1GabrielVasconcelos.c: 242:                       break;
+[e $U 316  ]
+"243
+[; ;Trabalho1GabrielVasconcelos.c: 243:                     case 7:
+[e :U 325 ]
+"244
+[; ;Trabalho1GabrielVasconcelos.c: 244:                       numero = 5;
+[e = _numero -> -> 5 `i `ui ]
+"245
+[; ;Trabalho1GabrielVasconcelos.c: 245:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"246
+[; ;Trabalho1GabrielVasconcelos.c: 246:                       cont2 = 5;
+[e = _cont2 -> -> 5 `i `uc ]
+"247
+[; ;Trabalho1GabrielVasconcelos.c: 247:                       break;
+[e $U 316  ]
+"248
+[; ;Trabalho1GabrielVasconcelos.c: 248:                     case 8:
+[e :U 326 ]
+"249
+[; ;Trabalho1GabrielVasconcelos.c: 249:                       numero = 7;
+[e = _numero -> -> 7 `i `ui ]
+"250
+[; ;Trabalho1GabrielVasconcelos.c: 250:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"251
+[; ;Trabalho1GabrielVasconcelos.c: 251:                       cont2 = 7;
+[e = _cont2 -> -> 7 `i `uc ]
+"252
+[; ;Trabalho1GabrielVasconcelos.c: 252:                       break;
+[e $U 316  ]
+"253
+[; ;Trabalho1GabrielVasconcelos.c: 253:                     case 9:
+[e :U 327 ]
+"254
+[; ;Trabalho1GabrielVasconcelos.c: 254:                       numero = 7;
+[e = _numero -> -> 7 `i `ui ]
+"255
+[; ;Trabalho1GabrielVasconcelos.c: 255:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"256
+[; ;Trabalho1GabrielVasconcelos.c: 256:                       cont2 = 7;
+[e = _cont2 -> -> 7 `i `uc ]
+"257
+[; ;Trabalho1GabrielVasconcelos.c: 257:                       break;
+[e $U 316  ]
+"258
+[; ;Trabalho1GabrielVasconcelos.c: 258:                     case 10:
+[e :U 328 ]
+"259
+[; ;Trabalho1GabrielVasconcelos.c: 259:                       numero = 7;
+[e = _numero -> -> 7 `i `ui ]
+"260
+[; ;Trabalho1GabrielVasconcelos.c: 260:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"261
+[; ;Trabalho1GabrielVasconcelos.c: 261:                       cont2 = 7;
+[e = _cont2 -> -> 7 `i `uc ]
+"262
+[; ;Trabalho1GabrielVasconcelos.c: 262:                       break;
+[e $U 316  ]
+"263
+[; ;Trabalho1GabrielVasconcelos.c: 263:                     case 11:
+[e :U 329 ]
+"264
+[; ;Trabalho1GabrielVasconcelos.c: 264:                       numero = 7;
+[e = _numero -> -> 7 `i `ui ]
+"265
+[; ;Trabalho1GabrielVasconcelos.c: 265:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"266
+[; ;Trabalho1GabrielVasconcelos.c: 266:                       cont2 = 7;
+[e = _cont2 -> -> 7 `i `uc ]
+"267
+[; ;Trabalho1GabrielVasconcelos.c: 267:                       break;
+[e $U 316  ]
+"268
+[; ;Trabalho1GabrielVasconcelos.c: 268:                     case 12:
+[e :U 330 ]
+"269
+[; ;Trabalho1GabrielVasconcelos.c: 269:                       numero = 11;
+[e = _numero -> -> 11 `i `ui ]
+"270
+[; ;Trabalho1GabrielVasconcelos.c: 270:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"271
+[; ;Trabalho1GabrielVasconcelos.c: 271:                       cont2 = 1;
+[e = _cont2 -> -> 1 `i `uc ]
+"272
+[; ;Trabalho1GabrielVasconcelos.c: 272:                       break;
+[e $U 316  ]
+"273
+[; ;Trabalho1GabrielVasconcelos.c: 273:                     case 13:
+[e :U 331 ]
+"274
+[; ;Trabalho1GabrielVasconcelos.c: 274:                       numero = 11;
+[e = _numero -> -> 11 `i `ui ]
+"275
+[; ;Trabalho1GabrielVasconcelos.c: 275:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"276
+[; ;Trabalho1GabrielVasconcelos.c: 276:                       cont2 = 1;
+[e = _cont2 -> -> 1 `i `uc ]
+"277
+[; ;Trabalho1GabrielVasconcelos.c: 277:                       break;
+[e $U 316  ]
+"278
+[; ;Trabalho1GabrielVasconcelos.c: 278:                     case 14:
+[e :U 332 ]
+"279
+[; ;Trabalho1GabrielVasconcelos.c: 279:                       numero = 13;
+[e = _numero -> -> 13 `i `ui ]
+"280
+[; ;Trabalho1GabrielVasconcelos.c: 280:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"281
+[; ;Trabalho1GabrielVasconcelos.c: 281:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"282
+[; ;Trabalho1GabrielVasconcelos.c: 282:                       break;
+[e $U 316  ]
+"283
+[; ;Trabalho1GabrielVasconcelos.c: 283:                     case 15:
+[e :U 333 ]
+"284
+[; ;Trabalho1GabrielVasconcelos.c: 284:                       numero = 13;
+[e = _numero -> -> 13 `i `ui ]
+"285
+[; ;Trabalho1GabrielVasconcelos.c: 285:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"286
+[; ;Trabalho1GabrielVasconcelos.c: 286:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"287
+[; ;Trabalho1GabrielVasconcelos.c: 287:                       break;
+[e $U 316  ]
+"289
+[; ;Trabalho1GabrielVasconcelos.c: 289:             }
+}
+[e $U 316  ]
+[e :U 317 ]
+[e [\ _numero , $ -> -> 0 `i `ui 318
+ , $ -> -> 1 `i `ui 319
+ , $ -> -> 2 `i `ui 320
+ , $ -> -> 3 `i `ui 321
+ , $ -> -> 4 `i `ui 322
+ , $ -> -> 5 `i `ui 323
+ , $ -> -> 6 `i `ui 324
+ , $ -> -> 7 `i `ui 325
+ , $ -> -> 8 `i `ui 326
+ , $ -> -> 9 `i `ui 327
+ , $ -> -> 10 `i `ui 328
+ , $ -> -> 11 `i `ui 329
+ , $ -> -> 12 `i `ui 330
+ , $ -> -> 13 `i `ui 331
+ , $ -> -> 14 `i `ui 332
+ , $ -> -> 15 `i `ui 333
+ 316 ]
+[e :U 316 ]
+"290
+[; ;Trabalho1GabrielVasconcelos.c: 290:         }
+}
+[e :U 315 ]
+"291
+[; ;Trabalho1GabrielVasconcelos.c: 291:     }
+}
+[e $U 334  ]
+"293
+[; ;Trabalho1GabrielVasconcelos.c: 293:         else{
+[e :U 295 ]
+{
+"294
+[; ;Trabalho1GabrielVasconcelos.c: 294:             if(PORTB & 0b00100000){
+[e $ ! != & -> _PORTB `i -> 32 `i -> 0 `i 335  ]
+{
+"295
+[; ;Trabalho1GabrielVasconcelos.c: 295:                 switch(numero){
+[e $U 337  ]
+{
+"296
+[; ;Trabalho1GabrielVasconcelos.c: 296:                     case 0:
+[e :U 338 ]
+"297
+[; ;Trabalho1GabrielVasconcelos.c: 297:                        numero = 3;
+[e = _numero -> -> 3 `i `ui ]
+"298
+[; ;Trabalho1GabrielVasconcelos.c: 298:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"299
+[; ;Trabalho1GabrielVasconcelos.c: 299:                        cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"300
+[; ;Trabalho1GabrielVasconcelos.c: 300:                        break;
+[e $U 336  ]
+"301
+[; ;Trabalho1GabrielVasconcelos.c: 301:                     case 1:
+[e :U 339 ]
+"302
+[; ;Trabalho1GabrielVasconcelos.c: 302:                        numero = 3;
+[e = _numero -> -> 3 `i `ui ]
+"303
+[; ;Trabalho1GabrielVasconcelos.c: 303:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"304
+[; ;Trabalho1GabrielVasconcelos.c: 304:                        cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"305
+[; ;Trabalho1GabrielVasconcelos.c: 305:                        break;
+[e $U 336  ]
+"306
+[; ;Trabalho1GabrielVasconcelos.c: 306:                     case 2:
+[e :U 340 ]
+"307
+[; ;Trabalho1GabrielVasconcelos.c: 307:                        numero = 3;
+[e = _numero -> -> 3 `i `ui ]
+"308
+[; ;Trabalho1GabrielVasconcelos.c: 308:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"309
+[; ;Trabalho1GabrielVasconcelos.c: 309:                        cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"310
+[; ;Trabalho1GabrielVasconcelos.c: 310:                        break;
+[e $U 336  ]
+"311
+[; ;Trabalho1GabrielVasconcelos.c: 311:                     case 3:
+[e :U 341 ]
+"312
+[; ;Trabalho1GabrielVasconcelos.c: 312:                        numero = 6;
+[e = _numero -> -> 6 `i `ui ]
+"313
+[; ;Trabalho1GabrielVasconcelos.c: 313:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"314
+[; ;Trabalho1GabrielVasconcelos.c: 314:                        cont2 = 6;
+[e = _cont2 -> -> 6 `i `uc ]
+"315
+[; ;Trabalho1GabrielVasconcelos.c: 315:                        break;
+[e $U 336  ]
+"316
+[; ;Trabalho1GabrielVasconcelos.c: 316:                     case 4:
+[e :U 342 ]
+"317
+[; ;Trabalho1GabrielVasconcelos.c: 317:                        numero = 6;
+[e = _numero -> -> 6 `i `ui ]
+"318
+[; ;Trabalho1GabrielVasconcelos.c: 318:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"319
+[; ;Trabalho1GabrielVasconcelos.c: 319:                        cont2 = 6;
+[e = _cont2 -> -> 6 `i `uc ]
+"320
+[; ;Trabalho1GabrielVasconcelos.c: 320:                        break;
+[e $U 336  ]
+"321
+[; ;Trabalho1GabrielVasconcelos.c: 321:                     case 5:
+[e :U 343 ]
+"322
+[; ;Trabalho1GabrielVasconcelos.c: 322:                        numero = 6;
+[e = _numero -> -> 6 `i `ui ]
+"323
+[; ;Trabalho1GabrielVasconcelos.c: 323:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"324
+[; ;Trabalho1GabrielVasconcelos.c: 324:                        cont2 = 6;
+[e = _cont2 -> -> 6 `i `uc ]
+"325
+[; ;Trabalho1GabrielVasconcelos.c: 325:                        break;
+[e $U 336  ]
+"326
+[; ;Trabalho1GabrielVasconcelos.c: 326:                     case 6:
+[e :U 344 ]
+"327
+[; ;Trabalho1GabrielVasconcelos.c: 327:                        numero = 9;
+[e = _numero -> -> 9 `i `ui ]
+"328
+[; ;Trabalho1GabrielVasconcelos.c: 328:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"329
+[; ;Trabalho1GabrielVasconcelos.c: 329:                        cont2 = 9;
+[e = _cont2 -> -> 9 `i `uc ]
+"330
+[; ;Trabalho1GabrielVasconcelos.c: 330:                        break;
+[e $U 336  ]
+"331
+[; ;Trabalho1GabrielVasconcelos.c: 331:                     case 7:
+[e :U 345 ]
+"332
+[; ;Trabalho1GabrielVasconcelos.c: 332:                        numero = 9;
+[e = _numero -> -> 9 `i `ui ]
+"333
+[; ;Trabalho1GabrielVasconcelos.c: 333:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"334
+[; ;Trabalho1GabrielVasconcelos.c: 334:                        cont2 = 9;
+[e = _cont2 -> -> 9 `i `uc ]
+"335
+[; ;Trabalho1GabrielVasconcelos.c: 335:                        break;
+[e $U 336  ]
+"336
+[; ;Trabalho1GabrielVasconcelos.c: 336:                     case 8:
+[e :U 346 ]
+"337
+[; ;Trabalho1GabrielVasconcelos.c: 337:                        numero = 9;
+[e = _numero -> -> 9 `i `ui ]
+"338
+[; ;Trabalho1GabrielVasconcelos.c: 338:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"339
+[; ;Trabalho1GabrielVasconcelos.c: 339:                        cont2 = 9;
+[e = _cont2 -> -> 9 `i `uc ]
+"340
+[; ;Trabalho1GabrielVasconcelos.c: 340:                        break;
+[e $U 336  ]
+"341
+[; ;Trabalho1GabrielVasconcelos.c: 341:                     case 9:
+[e :U 347 ]
+"342
+[; ;Trabalho1GabrielVasconcelos.c: 342:                        numero = 12;
+[e = _numero -> -> 12 `i `ui ]
+"343
+[; ;Trabalho1GabrielVasconcelos.c: 343:                        cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"344
+[; ;Trabalho1GabrielVasconcelos.c: 344:                        cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"345
+[; ;Trabalho1GabrielVasconcelos.c: 345:                        break;
+[e $U 336  ]
+"346
+[; ;Trabalho1GabrielVasconcelos.c: 346:                     case 10:
+[e :U 348 ]
+"347
+[; ;Trabalho1GabrielVasconcelos.c: 347:                        numero = 12;
+[e = _numero -> -> 12 `i `ui ]
+"348
+[; ;Trabalho1GabrielVasconcelos.c: 348:                        cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"349
+[; ;Trabalho1GabrielVasconcelos.c: 349:                        cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"350
+[; ;Trabalho1GabrielVasconcelos.c: 350:                        break;
+[e $U 336  ]
+"351
+[; ;Trabalho1GabrielVasconcelos.c: 351:                     case 11:
+[e :U 349 ]
+"352
+[; ;Trabalho1GabrielVasconcelos.c: 352:                        numero = 12;
+[e = _numero -> -> 12 `i `ui ]
+"353
+[; ;Trabalho1GabrielVasconcelos.c: 353:                        cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"354
+[; ;Trabalho1GabrielVasconcelos.c: 354:                        cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"355
+[; ;Trabalho1GabrielVasconcelos.c: 355:                        break;
+[e $U 336  ]
+"356
+[; ;Trabalho1GabrielVasconcelos.c: 356:                     case 12:
+[e :U 350 ]
+"357
+[; ;Trabalho1GabrielVasconcelos.c: 357:                        numero = 15;
+[e = _numero -> -> 15 `i `ui ]
+"358
+[; ;Trabalho1GabrielVasconcelos.c: 358:                        cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"359
+[; ;Trabalho1GabrielVasconcelos.c: 359:                        cont2 = 5;
+[e = _cont2 -> -> 5 `i `uc ]
+"360
+[; ;Trabalho1GabrielVasconcelos.c: 360:                        break;
+[e $U 336  ]
+"361
+[; ;Trabalho1GabrielVasconcelos.c: 361:                     case 13:
+[e :U 351 ]
+"362
+[; ;Trabalho1GabrielVasconcelos.c: 362:                        numero = 15;
+[e = _numero -> -> 15 `i `ui ]
+"363
+[; ;Trabalho1GabrielVasconcelos.c: 363:                        cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"364
+[; ;Trabalho1GabrielVasconcelos.c: 364:                        cont2 = 5;
+[e = _cont2 -> -> 5 `i `uc ]
+"365
+[; ;Trabalho1GabrielVasconcelos.c: 365:                        break;
+[e $U 336  ]
+"366
+[; ;Trabalho1GabrielVasconcelos.c: 366:                     case 14:
+[e :U 352 ]
+"367
+[; ;Trabalho1GabrielVasconcelos.c: 367:                        numero = 15;
+[e = _numero -> -> 15 `i `ui ]
+"368
+[; ;Trabalho1GabrielVasconcelos.c: 368:                        cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"369
+[; ;Trabalho1GabrielVasconcelos.c: 369:                        cont2 = 5;
+[e = _cont2 -> -> 5 `i `uc ]
+"370
+[; ;Trabalho1GabrielVasconcelos.c: 370:                        break;
+[e $U 336  ]
+"371
+[; ;Trabalho1GabrielVasconcelos.c: 371:                     case 15:
+[e :U 353 ]
+"372
+[; ;Trabalho1GabrielVasconcelos.c: 372:                        numero = 0;
+[e = _numero -> -> 0 `i `ui ]
+"373
+[; ;Trabalho1GabrielVasconcelos.c: 373:                        cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"374
+[; ;Trabalho1GabrielVasconcelos.c: 374:                        cont2 = 0;
+[e = _cont2 -> -> 0 `i `uc ]
+"375
+[; ;Trabalho1GabrielVasconcelos.c: 375:                        break;
+[e $U 336  ]
+"376
+[; ;Trabalho1GabrielVasconcelos.c: 376:                 }
+}
+[e $U 336  ]
+[e :U 337 ]
+[e [\ _numero , $ -> -> 0 `i `ui 338
+ , $ -> -> 1 `i `ui 339
+ , $ -> -> 2 `i `ui 340
+ , $ -> -> 3 `i `ui 341
+ , $ -> -> 4 `i `ui 342
+ , $ -> -> 5 `i `ui 343
+ , $ -> -> 6 `i `ui 344
+ , $ -> -> 7 `i `ui 345
+ , $ -> -> 8 `i `ui 346
+ , $ -> -> 9 `i `ui 347
+ , $ -> -> 10 `i `ui 348
+ , $ -> -> 11 `i `ui 349
+ , $ -> -> 12 `i `ui 350
+ , $ -> -> 13 `i `ui 351
+ , $ -> -> 14 `i `ui 352
+ , $ -> -> 15 `i `ui 353
+ 336 ]
+[e :U 336 ]
+"377
+[; ;Trabalho1GabrielVasconcelos.c: 377:             }
+}
+[e $U 354  ]
+"378
+[; ;Trabalho1GabrielVasconcelos.c: 378:             else{
+[e :U 335 ]
+{
+"379
+[; ;Trabalho1GabrielVasconcelos.c: 379:                 switch(numero){
+[e $U 356  ]
+{
+"380
+[; ;Trabalho1GabrielVasconcelos.c: 380:                     case 0:
+[e :U 357 ]
+"381
+[; ;Trabalho1GabrielVasconcelos.c: 381:                       numero = 2;
+[e = _numero -> -> 2 `i `ui ]
+"382
+[; ;Trabalho1GabrielVasconcelos.c: 382:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"383
+[; ;Trabalho1GabrielVasconcelos.c: 383:                       cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"384
+[; ;Trabalho1GabrielVasconcelos.c: 384:                       break;
+[e $U 355  ]
+"385
+[; ;Trabalho1GabrielVasconcelos.c: 385:                     case 1:
+[e :U 358 ]
+"386
+[; ;Trabalho1GabrielVasconcelos.c: 386:                       numero = 2;
+[e = _numero -> -> 2 `i `ui ]
+"387
+[; ;Trabalho1GabrielVasconcelos.c: 387:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"388
+[; ;Trabalho1GabrielVasconcelos.c: 388:                       cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"389
+[; ;Trabalho1GabrielVasconcelos.c: 389:                       break;
+[e $U 355  ]
+"390
+[; ;Trabalho1GabrielVasconcelos.c: 390:                     case 2:
+[e :U 359 ]
+"391
+[; ;Trabalho1GabrielVasconcelos.c: 391:                       numero = 3;
+[e = _numero -> -> 3 `i `ui ]
+"392
+[; ;Trabalho1GabrielVasconcelos.c: 392:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"393
+[; ;Trabalho1GabrielVasconcelos.c: 393:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"394
+[; ;Trabalho1GabrielVasconcelos.c: 394:                       break;
+[e $U 355  ]
+"395
+[; ;Trabalho1GabrielVasconcelos.c: 395:                     case 3:
+[e :U 360 ]
+"396
+[; ;Trabalho1GabrielVasconcelos.c: 396:                       numero = 5;
+[e = _numero -> -> 5 `i `ui ]
+"397
+[; ;Trabalho1GabrielVasconcelos.c: 397:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"398
+[; ;Trabalho1GabrielVasconcelos.c: 398:                       cont2 = 5;
+[e = _cont2 -> -> 5 `i `uc ]
+"399
+[; ;Trabalho1GabrielVasconcelos.c: 399:                       break;
+[e $U 355  ]
+"400
+[; ;Trabalho1GabrielVasconcelos.c: 400:                     case 4:
+[e :U 361 ]
+"401
+[; ;Trabalho1GabrielVasconcelos.c: 401:                       numero = 5;
+[e = _numero -> -> 5 `i `ui ]
+"402
+[; ;Trabalho1GabrielVasconcelos.c: 402:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"403
+[; ;Trabalho1GabrielVasconcelos.c: 403:                       cont2 = 5;
+[e = _cont2 -> -> 5 `i `uc ]
+"404
+[; ;Trabalho1GabrielVasconcelos.c: 404:                       break;
+[e $U 355  ]
+"405
+[; ;Trabalho1GabrielVasconcelos.c: 405:                     case 5:
+[e :U 362 ]
+"406
+[; ;Trabalho1GabrielVasconcelos.c: 406:                       numero = 7;
+[e = _numero -> -> 7 `i `ui ]
+"407
+[; ;Trabalho1GabrielVasconcelos.c: 407:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"408
+[; ;Trabalho1GabrielVasconcelos.c: 408:                       cont2 = 7;
+[e = _cont2 -> -> 7 `i `uc ]
+"409
+[; ;Trabalho1GabrielVasconcelos.c: 409:                       break;
+[e $U 355  ]
+"410
+[; ;Trabalho1GabrielVasconcelos.c: 410:                     case 6:
+[e :U 363 ]
+"411
+[; ;Trabalho1GabrielVasconcelos.c: 411:                       numero = 7;
+[e = _numero -> -> 7 `i `ui ]
+"412
+[; ;Trabalho1GabrielVasconcelos.c: 412:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"413
+[; ;Trabalho1GabrielVasconcelos.c: 413:                       cont2 = 7;
+[e = _cont2 -> -> 7 `i `uc ]
+"414
+[; ;Trabalho1GabrielVasconcelos.c: 414:                       break;
+[e $U 355  ]
+"415
+[; ;Trabalho1GabrielVasconcelos.c: 415:                     case 7:
+[e :U 364 ]
+"416
+[; ;Trabalho1GabrielVasconcelos.c: 416:                       numero = 11;
+[e = _numero -> -> 11 `i `ui ]
+"417
+[; ;Trabalho1GabrielVasconcelos.c: 417:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"418
+[; ;Trabalho1GabrielVasconcelos.c: 418:                       cont2 = 1;
+[e = _cont2 -> -> 1 `i `uc ]
+"419
+[; ;Trabalho1GabrielVasconcelos.c: 419:                       break;
+[e $U 355  ]
+"420
+[; ;Trabalho1GabrielVasconcelos.c: 420:                     case 8:
+[e :U 365 ]
+"421
+[; ;Trabalho1GabrielVasconcelos.c: 421:                       numero = 11;
+[e = _numero -> -> 11 `i `ui ]
+"422
+[; ;Trabalho1GabrielVasconcelos.c: 422:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"423
+[; ;Trabalho1GabrielVasconcelos.c: 423:                       cont2 = 1;
+[e = _cont2 -> -> 1 `i `uc ]
+"424
+[; ;Trabalho1GabrielVasconcelos.c: 424:                       break;
+[e $U 355  ]
+"425
+[; ;Trabalho1GabrielVasconcelos.c: 425:                     case 9:
+[e :U 366 ]
+"426
+[; ;Trabalho1GabrielVasconcelos.c: 426:                       numero = 11;
+[e = _numero -> -> 11 `i `ui ]
+"427
+[; ;Trabalho1GabrielVasconcelos.c: 427:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"428
+[; ;Trabalho1GabrielVasconcelos.c: 428:                       cont2 = 1;
+[e = _cont2 -> -> 1 `i `uc ]
+"429
+[; ;Trabalho1GabrielVasconcelos.c: 429:                       break;
+[e $U 355  ]
+"430
+[; ;Trabalho1GabrielVasconcelos.c: 430:                     case 10:
+[e :U 367 ]
+"431
+[; ;Trabalho1GabrielVasconcelos.c: 431:                       numero = 11;
+[e = _numero -> -> 11 `i `ui ]
+"432
+[; ;Trabalho1GabrielVasconcelos.c: 432:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"433
+[; ;Trabalho1GabrielVasconcelos.c: 433:                       cont2 = 1;
+[e = _cont2 -> -> 1 `i `uc ]
+"434
+[; ;Trabalho1GabrielVasconcelos.c: 434:                       break;
+[e $U 355  ]
+"435
+[; ;Trabalho1GabrielVasconcelos.c: 435:                     case 11:
+[e :U 368 ]
+"436
+[; ;Trabalho1GabrielVasconcelos.c: 436:                       numero = 13;
+[e = _numero -> -> 13 `i `ui ]
+"437
+[; ;Trabalho1GabrielVasconcelos.c: 437:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"438
+[; ;Trabalho1GabrielVasconcelos.c: 438:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"439
+[; ;Trabalho1GabrielVasconcelos.c: 439:                       break;
+[e $U 355  ]
+"440
+[; ;Trabalho1GabrielVasconcelos.c: 440:                     case 12:
+[e :U 369 ]
+"441
+[; ;Trabalho1GabrielVasconcelos.c: 441:                       numero = 13;
+[e = _numero -> -> 13 `i `ui ]
+"442
+[; ;Trabalho1GabrielVasconcelos.c: 442:                       cont1 = 1;
+[e = _cont1 -> -> 1 `i `uc ]
+"443
+[; ;Trabalho1GabrielVasconcelos.c: 443:                       cont2 = 3;
+[e = _cont2 -> -> 3 `i `uc ]
+"444
+[; ;Trabalho1GabrielVasconcelos.c: 444:                       break;
+[e $U 355  ]
+"445
+[; ;Trabalho1GabrielVasconcelos.c: 445:                     case 13:
+[e :U 370 ]
+"446
+[; ;Trabalho1GabrielVasconcelos.c: 446:                       numero = 2;
+[e = _numero -> -> 2 `i `ui ]
+"447
+[; ;Trabalho1GabrielVasconcelos.c: 447:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"448
+[; ;Trabalho1GabrielVasconcelos.c: 448:                       cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"449
+[; ;Trabalho1GabrielVasconcelos.c: 449:                       break;
+[e $U 355  ]
+"450
+[; ;Trabalho1GabrielVasconcelos.c: 450:                     case 14:
+[e :U 371 ]
+"451
+[; ;Trabalho1GabrielVasconcelos.c: 451:                       numero = 2;
+[e = _numero -> -> 2 `i `ui ]
+"452
+[; ;Trabalho1GabrielVasconcelos.c: 452:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"453
+[; ;Trabalho1GabrielVasconcelos.c: 453:                       cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"454
+[; ;Trabalho1GabrielVasconcelos.c: 454:                       break;
+[e $U 355  ]
+"455
+[; ;Trabalho1GabrielVasconcelos.c: 455:                     case 15:
+[e :U 372 ]
+"456
+[; ;Trabalho1GabrielVasconcelos.c: 456:                       numero = 2;
+[e = _numero -> -> 2 `i `ui ]
+"457
+[; ;Trabalho1GabrielVasconcelos.c: 457:                       cont1 = 16;
+[e = _cont1 -> -> 16 `i `uc ]
+"458
+[; ;Trabalho1GabrielVasconcelos.c: 458:                       cont2 = 2;
+[e = _cont2 -> -> 2 `i `uc ]
+"459
+[; ;Trabalho1GabrielVasconcelos.c: 459:                       break;}
+[e $U 355  ]
+}
+[e $U 355  ]
+[e :U 356 ]
+[e [\ _numero , $ -> -> 0 `i `ui 357
+ , $ -> -> 1 `i `ui 358
+ , $ -> -> 2 `i `ui 359
+ , $ -> -> 3 `i `ui 360
+ , $ -> -> 4 `i `ui 361
+ , $ -> -> 5 `i `ui 362
+ , $ -> -> 6 `i `ui 363
+ , $ -> -> 7 `i `ui 364
+ , $ -> -> 8 `i `ui 365
+ , $ -> -> 9 `i `ui 366
+ , $ -> -> 10 `i `ui 367
+ , $ -> -> 11 `i `ui 368
+ , $ -> -> 12 `i `ui 369
+ , $ -> -> 13 `i `ui 370
+ , $ -> -> 14 `i `ui 371
+ , $ -> -> 15 `i `ui 372
+ 355 ]
+[e :U 355 ]
+"460
+[; ;Trabalho1GabrielVasconcelos.c: 460:             }
+}
+[e :U 354 ]
+"461
+[; ;Trabalho1GabrielVasconcelos.c: 461:         }
+}
+[e :U 334 ]
+"462
+[; ;Trabalho1GabrielVasconcelos.c: 462:     }
+}
+[e :U 294 ]
+"463
+[; ;Trabalho1GabrielVasconcelos.c: 463: }
+[e :UE 293 ]
+}
+"465
+[; ;Trabalho1GabrielVasconcelos.c: 465: void saida(void) {
+[v _saida `(v ~T0 @X0 1 ef ]
+{
+[e :U _saida ]
+[f ]
+"467
+[; ;Trabalho1GabrielVasconcelos.c: 467:     unsigned int tempo = 10;
+[v _tempo `ui ~T0 @X0 1 a ]
+[e = _tempo -> -> 10 `i `ui ]
+"468
+[; ;Trabalho1GabrielVasconcelos.c: 468:     LATA3 = 0;
+[e = _LATA3 -> -> 0 `i `b ]
+"469
+[; ;Trabalho1GabrielVasconcelos.c: 469:     LATA2 = 1;
+[e = _LATA2 -> -> 1 `i `b ]
+"470
+[; ;Trabalho1GabrielVasconcelos.c: 470:     LATD = conv7seg[cont1];
+[e = _LATD *U + &U _conv7seg * -> _cont1 `ux -> -> # *U &U _conv7seg `ui `ux ]
+"471
+[; ;Trabalho1GabrielVasconcelos.c: 471:     atraso(tempo);
+[e ( _atraso (1 _tempo ]
+"472
+[; ;Trabalho1GabrielVasconcelos.c: 472:     LATA3 = 1;
+[e = _LATA3 -> -> 1 `i `b ]
+"473
+[; ;Trabalho1GabrielVasconcelos.c: 473:     LATA2 = 0;
+[e = _LATA2 -> -> 0 `i `b ]
+"474
+[; ;Trabalho1GabrielVasconcelos.c: 474:     LATD = conv7seg[cont2];
+[e = _LATD *U + &U _conv7seg * -> _cont2 `ux -> -> # *U &U _conv7seg `ui `ux ]
+"475
+[; ;Trabalho1GabrielVasconcelos.c: 475:     atraso(tempo);
+[e ( _atraso (1 _tempo ]
+"476
+[; ;Trabalho1GabrielVasconcelos.c: 476: }
+[e :UE 373 ]
+}
